@@ -35,7 +35,7 @@ const app = Vue.createApp({
       this.error = "";
       this.weather = null;
 
-      const API_KEY = "YOUR_API_KEY";
+      const API_KEY = "14966ee8d6d4ce3893791db842069be8";
       const url = `https://api.openweathermap.org/data/2.5/weather?q=${this.city}&appid=${API_KEY}&units=metric`;
 
       try {
