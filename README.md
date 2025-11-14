@@ -26,8 +26,7 @@ Fetches live weather data using the OpenWeatherMap API.
 Enter cities like:
 Hyderabad, Delhi, Mumbai
 
-yaml
-Copy code
+
 It fetches and visualizes all of them together.
 
 ### 📊 **3. Multiple Visualization Types**
@@ -65,23 +64,14 @@ Automatically restores your last search when you reopen the app.
 
 ---
 
-## 📂 Project Structure
-
-WeatherVision/
-│── index.html
-│── styles.css
-│── main.js
-└── README.md
-
----
 
 ## 🔧 Installation & Setup
 
 ### 1️⃣ Clone the repository  
-```bash
+```
 git clone https://github.com/yourusername/WeatherVision.git
 2️⃣ Open the project folder
-bash
+
 Copy code
 cd WeatherVision
 3️⃣ Get your OpenWeatherMap API key
@@ -89,8 +79,7 @@ cd WeatherVision
 Verify your email → Generate API Key → Copy it.
 
 4️⃣ Add your API key into main.js
-js
-Copy code
+
 API_KEY: "YOUR_API_KEY_HERE"
 5️⃣ Run the Project
 Just open index.html in your browser
@@ -101,8 +90,7 @@ use Live Server in VS Code.
 ✔ Fetch Weather
 When you search a city:
 
-txt
-Copy code
+
 https://api.openweathermap.org/data/2.5/weather?q={city}&appid={API_KEY}&units=metric
 ✔ Visualize Data
 Data is displayed using Chart.js:
@@ -116,7 +104,6 @@ Wind speed
 ✔ Compare Multiple Cities
 Input example:
 
-Copy code
 Hyderabad, Delhi, Mumbai
 The dashboard loads all weather data and builds comparison charts.
 
