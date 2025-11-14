@@ -66,7 +66,7 @@ Automatically restores your last search when you reopen the app.
 ### 📂PROJECT STRUCTURE
 
 WeatherVision/
-│── index.html
+** │── index.html **
 │── styles.css
 │── main.js
 └── README.md
