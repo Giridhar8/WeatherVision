@@ -63,64 +63,12 @@ Automatically restores your last search when you reopen the app.
 | **HTML5 / CSS3** | Layout & Styling |
 
 ---
+### 📂PROJECT STRUCTURE
 
+WeatherVision/
+│── index.html
+│── styles.css
+│── main.js
+└── README.md
 
-## 🔧 Installation & Setup
-
-### 1️⃣ Clone the repository  
-```
-git clone https://github.com/yourusername/WeatherVision.git
-2️⃣ Open the project folder
-
-Copy code
-cd WeatherVision
-3️⃣ Get your OpenWeatherMap API key
-👉 https://openweathermap.org/api
-Verify your email → Generate API Key → Copy it.
-
-4️⃣ Add your API key into main.js
-
-API_KEY: "YOUR_API_KEY_HERE"
-5️⃣ Run the Project
-Just open index.html in your browser
-OR
-use Live Server in VS Code.
-
-📊 How It Works
-✔ Fetch Weather
-When you search a city:
-
-
-https://api.openweathermap.org/data/2.5/weather?q={city}&appid={API_KEY}&units=metric
-✔ Visualize Data
-Data is displayed using Chart.js:
-
-Temperature
-
-Humidity
-
-Wind speed
-
-✔ Compare Multiple Cities
-Input example:
-
-Hyderabad, Delhi, Mumbai
-The dashboard loads all weather data and builds comparison charts.
-
-🎨 UI & UX Highlights
-Smooth fade animations
-
-Slide-in weather card
-
-Responsive layout
-
-Modern color palette
-
-Rounded UI design
-
-Dark / Light mode
-
-Dynamic chart switching
-
-
-
+---
