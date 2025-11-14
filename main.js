@@ -9,7 +9,7 @@ const app = Vue.createApp({
       theme: localStorage.getItem("theme") || "light",
       tempChart: null,
       selectedChart: "bar",
-      API_KEY: "YOUR_API_KEY"
+      API_KEY: "YOUR_API_KE14966ee8d6d4ce3893791db842069be8Y"
     };
   },
 
