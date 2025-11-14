@@ -72,3 +72,8 @@ WeatherVision/
  └── README.md 
 ```
 ---
+## NOTES
+```
+IN main.js
+REPLACE YOUR_API_KEY_HERE with your API_KEY
+```
