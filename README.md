@@ -73,9 +73,6 @@ WeatherVision/
 │── main.js
 └── README.md
 
-yaml
-Copy code
-
 ---
 
 ## 🔧 Installation & Setup
