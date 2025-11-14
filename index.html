@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vue Weather Dashboard</title>
+
+  <!-- Vue 3 CDN -->
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+  <!-- Chart.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body :class="theme">
+
+  <div id="app" class="container" :class="theme">
+    <div class="header">
+      <h1 class="title">Weather Dashboard</h1>
+      <button class="theme-btn" @click="toggleTheme">
+        {{ theme === 'light' ? '🌙 Dark Mode' : '☀️ Light Mode' }}
+      </button>
+    </div>
+
+    <div class="search-box">
+      <input 
+        type="text"
+        v-model="city"
+        placeholder="Enter city name..."
+        @keyup.enter="getWeather"
+      />
+      <button class="search-btn" @click="getWeather">Search</button>
+    </div>
+
+    <div v-if="loading" class="loader"></div>
+
+    <p v-if="error" class="error">{{ error }}</p>
+
+    <transition name="fade">
+      <div v-if="weather" class="weather-card">
+        <h2>{{ weather.name }}</h2>
+        <h3>{{ weather.main.temp }}°C</h3>
+        <p>Humidity: {{ weather.main.humidity }}%</p>
+        <p>Wind: {{ weather.wind.speed }} m/s</p>
+
+        <canvas id="tempChart" width="300" height="200"></canvas>
+      </div>
+    </transition>
+  </div>
+
+  <script src="main.js"></script>
+
+</body>
+</html>
