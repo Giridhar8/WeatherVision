@@ -135,3 +135,6 @@ Dark / Light mode
 
 Dynamic chart switching
 
+
+OUTPUT:
+<img width="1654" height="870" alt="image" src="https://github.com/user-attachments/assets/0c73c3d0-5b7c-4706-b80b-467a34d7e630" />
